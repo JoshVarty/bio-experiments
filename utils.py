@@ -2,7 +2,6 @@ import torch
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 def get_output_for_example(model, x):
     logits = model(x.unsqueeze(0))
     probs = torch.softmax(logits, dim=-1)
